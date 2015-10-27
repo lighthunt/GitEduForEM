@@ -1,0 +1,11 @@
+[http]
+	#proxy = set correct HPE http proxy here
+	
+[alias]
+	#lo = log --oneline --graph --decorate --stat --all
+	lo = log --graph --all --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ce>%Creset'
+	loo = log --graph --all --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ce>%Creset' --stat
+[credential]
+	helper = wincred
+	
+	
