@@ -1,11 +1,13 @@
 [http]
-	#proxy = set correct HPE http proxy here
+	#proxy = set correct HPE http proxy here in order to access remote repos outside HPE
 	
 [alias]
 	#lo = log --oneline --graph --decorate --stat --all
+	# more usefull and nicer logs
 	lo = log --graph --all --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ce>%Creset'
 	loo = log --graph --all --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ce>%Creset' --stat
 [credential]
+    # do not have to retype your passwords for remote repos again and again (windows version)
 	helper = wincred
 	
 	
